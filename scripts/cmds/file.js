@@ -1,10 +1,10 @@
- const fs = require('fs');
+const fs = require('fs');
 
 module.exports = {
   config: {
     name: "file",
     version: "1.0",
-    author: "OtinXShiva",
+    author: "ÑÅŘÜŢØ",
     countDown: 5,
     role: 0,
     shortDescription: "Send bot script",
@@ -14,9 +14,9 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["61560421992487","100053227594219"];
+    const permission = ["61560421992487", "100026415671401"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("🔞 ce cmd est interdit aux enfants de ton âge 🙃", event.threadID, event.messageID);
+      return api.sendMessage("❌ 𝑳𝒐𝒍 𝒅𝒆́𝒈𝒂𝒈𝒆 𝒎𝒖𝒆𝒕𝒕𝒆𝒔 🧘‍♀️  𝒔𝒆𝒖𝒍 🧞‍♂️ÑÅŘÜŢØ🧞‍♂️ 𝒑𝒆𝒖𝒙 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒓 𝒄𝒆𝒕𝒕𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆 😡", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
