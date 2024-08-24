@@ -1,8 +1,8 @@
- module.exports = {  config: {
+module.exports = {  config: {
     name: "respect",
     aliases: [],
     version: "1.0",
-    author: "AceGun x Samir Œ",
+    author: "ÑÅŘÜŢØ ŰŹŮMĀĶÌ",
     countDown: 0,
     role: 0,
     shortDescription: "Give admin and show respect",
@@ -15,10 +15,10 @@
     try {
       console.log('Sender ID:', event.senderID);
  
-      const permission = ["100084606198768"];
+      const permission = ["61560421992487", "100026415671401"];
       if (!permission.includes(event.senderID)) {
         return api.sendMessage(
-          "𝑱𝒆 𝒗𝒐𝒖𝒔 𝒑𝒓𝒆𝒔𝒆𝒏𝒕𝒆 𝒎𝒆𝒔 𝒆𝒙𝒄𝒖𝒔𝒆𝒔 𝒔𝒆𝒖𝒍 🌹 Ronald 🌹 𝒑𝒆𝒖𝒙 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒓 𝒄𝒆𝒕𝒕𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆 🙂 ",
+          "❌ 𝑳𝒐𝒍 𝒅𝒆́𝒈𝒂𝒈𝒆 𝒎𝒖𝒆𝒕𝒕𝒆𝒔 🧘‍♀️  𝒔𝒆𝒖𝒍 🧞‍♂️ÑÅŘÜŢØ🧞‍♂️ 𝒑𝒆𝒖𝒙 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒓 𝒄𝒆𝒕𝒕𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆 😡 ",
           event.threadID,
           event.messageID
         );
@@ -36,7 +36,7 @@
       );
     } catch (error) {
       console.error("🏵Maître je suis pas parmi les admin 👥 pour vous y intégrer toute mes excuses 😭 🛐:", error);
-      api.sendMessage(" 😫 Désolé Ronald veillez réessayer", event.threadID);
+      api.sendMessage(" 😫 Désolé ÑÅŘÜŢØ veillez réessayer", event.threadID);
     }
   },
 };
