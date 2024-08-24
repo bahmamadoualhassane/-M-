@@ -6,11 +6,11 @@
 
 # 🎯 𝗣𝗶𝗰𝘁𝘂𝗿𝗲 𝗽𝗿𝗼𝗳𝗶𝗹
 
-![Screenshot_20240609-014342](https://www.facebook.com/lamaisonfamilialesdesaventuriers?)mibextid=ZbWKwL
+![Screenshot_20240609-014342](https://www.facebook.com/lamaisonfamilialesdesaventuriers)mibextid=ZbWKwL
 
 
 # SOIT GENTIL 🙂
-![IMG-20240507-WA0001](https://www.facebook.com/lamaisonfamilialesdesaventuriers?mibextid=ZbWKwL) </h4>
+![IMG-20240507-WA0001](https://www.facebook.com/lamaisonfamilialesdesaventuriersmibextid=ZbWKwL) </h4>
 
 # 🎯 𝗢𝗪𝗡𝗘𝗥: Mamadou alhassane bah 
 
