@@ -1,0 +1,19 @@
+module.exports = {
+    config: {
+        name: "Ai",
+        version: "1.0",
+        author: "𝐌𝐀𝐌𝐀𝐃𝐎𝐔-𝐁𝐀𝐇",
+        countDown: 5,
+        role: 0,
+        shortDescription: "sarcasm",
+        longDescription: "sarcasm",
+        category: "reply",
+    },
+onStart: async function(){},
+onChat: async function({ event,
+    message,
+    getLang
+}) {
+    if (event.body && event.body.toLowerCase() == "ai") return message.reply("𝐫𝐞𝐠𝐚𝐫𝐝𝐞𝐫 𝐦𝐨𝐢 𝐜𝐞 𝐜𝐚𝐟𝐚𝐫𝐝😆 𝐧𝐞 𝐦'𝐚𝐩𝐩𝐞𝐥𝐥𝐞 𝐩𝐚𝐬 𝐀𝐢😤 𝐀𝐩𝐩𝐞𝐥𝐞 𝐦𝐨𝐢 𝐩𝐚𝐫 𝐦𝐨𝐧 𝐧𝐨𝐦☛𝐍𝐢𝐦𝐚 𝐨𝐮̀ 𝐍𝐢☚");
+}
+};
