@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "♥︎╣𝗡𝗜𝗠𝗔╠♥︎ \n╭───────╯•╰───────╮\nhttps://www.facebook.com/l.m.f.univers?mibextid=ZbWKwL \n╰───────╮•╭───────╯\n╭───────╯•╰───────╮\nhttps://www.facebook.com/lamaisonfamilialesdesaventuriers?mibextid=ZbWKwL\n╰───────╮•╭───────╯\n";
+const doNotDelete = "   ❣⚜🍎╣𝗡𝗜𝗠𝗔╠🍎⚜❣ \n╭─────╯🍎╰─────╮\nhttps://www.facebook.com/l.m.f.univers?mibextid=ZbWKwL \n╰─────╮🍎╭─────╯\n╭─────╯🧞‍♂️╰─────╮\nhttps://www.facebook.com/lamaisonfamilialesdesaventuriers?mibextid=ZbWKwL\n╰─────╮🧞‍♂️╭─────╯\n";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -44,13 +44,13 @@ module.exports = {
 	langs: {
 		vi: {
 			help: " |I{•------» ✰...𝗢𝗣𝗧𝗜𝗠𝗨𝗦....✰ «------•}I| \n%1\n |I{•------» ✰...𝗢𝗣𝗧𝗜𝗠𝗨𝗦....✰ «------•}I| \n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n |I{•------» ✰...𝗢𝗣𝗧𝗜𝗠𝗨𝗦....✰ «------•}I| \n│ %6\n |I{•------» ✰...𝗢𝗣𝗧𝗜𝗠𝗨𝗦....✰ «------•}I| ",
-			help2: "%1├───────⭔\n➬❦....... » Hiện tại bot có %2 lệnh có thể sử dụng\n│ » Gõ %3help <tên lệnh> để xem chi tiết cách sử dụng lệnh đó\n│ %4\n╰─────────────⭓",
+			help2: "%1├───────⭔\n➬❦....... » Hiện tại bot có %2 lệnh có thể sử dụng\n│ » Gõ %3help <tên lệnh> để xem chi tiết cách sử dụng lệnh đó\n│ %4\n╰──────────⭓",
 			commandNotFound: "Lệnh \"%1\" không tồn tại",
 			getInfoCommand: "╭── NAME ────⭓\n│ %1\n❏❖❏❖❏❖ - ❖❏❖❏❖❏ INFO\n│ Mô tả: %2\n│ Các tên gọi khác: %3\n│ Các tên gọi khác trong nhóm bạn: %4\n│ Version: %5\n│ Role: %6\n│ Thời gian mỗi lần dùng lệnh: %7s\n│ Author: %8\n❏❖❏❖❏❖ - ❖❏❖❏❖❏ Usage\n│%9\n❏❖❏❖❏❖ - ❖❏❖❏❖❏ Notes\n│ Nội dung bên trong <XXXXX> là có thể thay đổi\n│ Nội dung bên trong [a|b|c] là a hoặc b hoặc c\n╰──────⭔",
-			onlyInfo: "╭── INFO ────⭓\n│ Tên lệnh: %1\n│ Mô tả: %2\n│ Các tên gọi khác: %3\n│ Các tên gọi khác trong nhóm bạn: %4\n│ Version: %5\n│ Role: %6\n│ Thời gian mỗi lần dùng lệnh: %7s\n│ Author: %8\n╰─────────────⭓",
-			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰─────────────⭓",
-			onlyAlias: "╭── ALIAS ────⭓\n│ Các tên gọi khác: %1\n│ Các tên gọi khác trong nhóm bạn: %2\n╰─────────────⭓",
-			onlyRole: "╭── ROLE ────⭓\n│%1\n╰─────────────⭓",
+			onlyInfo: "╭── INFO ────⭓\n│ Tên lệnh: %1\n│ Mô tả: %2\n│ Các tên gọi khác: %3\n│ Các tên gọi khác trong nhóm bạn: %4\n│ Version: %5\n│ Role: %6\n│ Thời gian mỗi lần dùng lệnh: %7s\n│ Author: %8\n╰──────────⭓",
+			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰─────────⭓",
+			onlyAlias: "╭── ALIAS ────⭓\n│ Các tên gọi khác: %1\n│ Các tên gọi khác trong nhóm bạn: %2\n╰──────────⭓",
+			onlyRole: "╭── ROLE ────⭓\n│%1\n╰─────────⭓",
 			doNotHave: "Không có",
 			roleText0: "0 (Tất cả người dùng)",
 			roleText1: "1 (Quản trị viên nhóm)",
@@ -60,14 +60,14 @@ module.exports = {
 			pageNotFound: "Trang %1 không tồn tại"
 		},
 		en: {
-			help: "╔═══════════╗\n♥︎╣𝗡𝗜𝗠𝗔╠♥︎ 𝗖𝗠𝗗𝗦\n╚═══════════╝\n%1\n╔═══════════╗\n♥︎╣𝗡𝗜𝗠𝗔╠♥︎ 𝗖𝗠𝗗𝗦\n╚═══════════╝\n➳ Page(s) [ %2/%3 ]\n➪[%4] Cmds \n➪Écrit %5help <page> pour voir d'autres cmds 👨🏽‍💻\n\n├────────⭔\n│ %6\n",
-			help2: "%1├───────⭔\n➪J'ai [%2] Cmds actuellement \n➪Écrit %3help <command name> \npour voir comment la cmd fonctionne  👨🏽‍💻│ %4\n╰─────────────⭓",
+			help: "╔═══════════╗\n     🍎╣𝗡𝗜𝗠𝗔╠🍎 𝗖𝗠𝗗𝗦\n╚═══════════╝\n%1\n╔═══════════╗\n      🍎╣𝗡𝗜𝗠𝗔╠🍎 𝗖𝗠𝗗𝗦\n╚═══════════╝\n➳ Page(s) [ %2/%3 ]\n➪[%4] Cmds \n➪Écrit %5help <page> pour voir d'autres cmds 👨🏽‍💻\n\n├────────⭔\n│ %6\n",
+			help2: "%1├───────⭔\n➪J'ai [%2] Cmds actuellement \n➪Écrit %3help <command name> \npour voir comment la cmd fonctionne  👨🏽‍💻│ %4\n╰───────────⭓",
 			commandNotFound: "Command \"%1\" does not exist",
 			getInfoCommand: "╭── NAME ────⭓\n│ %1\n════════════════\n 𝗜𝗡𝗙𝗢\n│ 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n════════════════\n 𝗨𝗦𝗔𝗚𝗘\n%9\n════════════════\n 𝗡𝗢𝗧𝗘\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────⭔",
-			onlyInfo: "╭── INFO ────⭓\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────⭓",
-			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰─────────────⭓",
-			onlyAlias: "╭── ALIAS ────⭓\n│ Other names: %1\n│ Other names in your group: %2\n╰─────────────⭓",
-			onlyRole: "╭── ROLE ────⭓\n│%1\n╰─────────────⭓",
+			onlyInfo: "╭── INFO ────⭓\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰───────────⭓",
+			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰──────────⭓",
+			onlyAlias: "╭── ALIAS ────⭓\n│ Other names: %1\n│ Other names in your group: %2\n╰──────────⭓",
+			onlyRole: "╭── ROLE ────⭓\n│%1\n╰──────────⭓",
 			doNotHave: "Do not have",
 			roleText0: "0 (All users)",
 			roleText1: "1 (Group administrators)",
