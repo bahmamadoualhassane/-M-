@@ -1,0 +1,64 @@
+const axios = require('axios');
+
+module.exports = {
+    config: {
+        name: "âge",
+        aliases: ["anniversaire", "date de naissance"],
+        version: "1.0", 
+        author: "ÑÅŘÜŢØ ŰŹŮMĀĶÌ",
+        description: {
+            vi: "Lấy thông tin tuổi dựa trên ngày sinh.",
+            en: "Obtenir des informations sur l'âge en fonction de la date de naissance."
+        },
+        category: "UTILITAIRE",
+        guide: {
+            vi : "{pn} <ngày sinh (JJ-MM-AAAA)>",
+            fr : "{pn} <date de naissance (JJ-MM-AAAA)>"
+        }
+    },
+
+    onStart: async function ({ api, args, event }) {
+        const birthdate = args[0];
+
+        try {
+            const response = await axios.get(`https://rubish-apihub.onrender.com/rubish/agecalculator?birthdate=${birthdate}&apikey=rubish69`);
+            const data = response.data;
+
+            const formattedResponse = `
+╟ 𝗔𝗚𝗘 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡 ╢
+﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌
+📅 Date d naissance : ${birthdate}
+
+🎂 Âge : ${data.ageData.age.years} ans ${data.ageData.age.months} ​​mois ${data.ageData.age.days} jours
+
+📅 Âge total :
+  - Années : ${data.ageData.totalAge.years}
+  - Mois : ${data.ageData.totalAge.months}
+  - Semaines : ${data.ageData.totalAge.weeks}
+  - Jours : ${data.ageData.totalAge.days}
+  - Heures : ${data.ageData.totalAge.hours}
+  - Minutes : ${data.ageData.totalAge.minutes}
+  - Secondes : ${data.ageData.totalAge.seconds}
+
+🎉 Prochain anniversaire : ${data.ageData.nextBirthday.dayName}, ${data.ageData.nextBirthday.remainingMonths} ​​mois ${data.ageData.nextBirthday.remainingDays} jours
+
+🖼 URL d l'image : ${data.imgbbImageUrl}
+`;
+
+            if (typeof data.imgbbImageUrl === 'string' && data.imgbbImageUrl) {
+                const attachment = await global.utils.getStreamFromURL(data.imgbbImageUrl);
+                await api.sendMessage({
+                    body: formattedResponse,
+                    attachment
+                }, event.threadID);
+            } else {
+                await api.sendMessage({
+                    body: formattedResponse
+                }, event.threadID);
+            }
+        } catch (error) {
+            console.error('Erreur lors de la récupération des données dâge:', error);
+            api.sendMessage("Une erreur s'est produite lors du traitement de la demande.", event.threadID);
+        }
+    }
+};
