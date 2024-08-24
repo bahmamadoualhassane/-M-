@@ -1,3 +1,4 @@
++cmd install antichangeinfobox.js 
 const { getStreamFromURL, uploadImgbb } = global.utils;
 
 module.exports = {
